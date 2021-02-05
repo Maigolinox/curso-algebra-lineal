@@ -1,0 +1,57 @@
+---
+title: "TEMA 2"
+author: "VICTOR TERRON"
+date: "30/12/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##NUESTRAS PROPIAS CHUNKS
+
+
+Vamos a calcular: $$\sqrt(21)-e^{2}$$
+```{r miPrimerChunk, echo=TRUE,eval=TRUE,results='hold'}
+sqrt(21)-exp(2)
+x=1:5
+sqrt(x)
+```
+
+Cargando mensajes
+
+```{r magic, message=TRUE,comment=NA,results='markup'}
+library(magic)
+magic(6)
+```
+
+Chunks en modo línea: 
+
+En \LaTeX\ es $\sqrt{2}$
+
+En `R` es `r sqrt(2)`
+
+Frase completa es $\sqrt{2}$= `r sqrt(2)`
+
+El número $\pi$ comienza por `r pi`
+
+
+La raíz quinta de 64 $\sqrt[5]{64}$ es `r 64^(1/5)`
+
+
+```{r prueba, results='hide',echo=FALSE}
+notas=c(9,8,7,9,8,7,10)
+media=mean(notas)
+n=length(notas)
+desvtip=sd(notas)
+```
+
+Éste año he hecho backsitck `r n` examenes con una media $\overline{x}=$ `r round(media,2)` y una desviación tipica de $s=$ `r round(desvtip,2)`
+
+
+
+##DOCUMENTACIÓN DE TEXTO
+
+Para documentar el texto

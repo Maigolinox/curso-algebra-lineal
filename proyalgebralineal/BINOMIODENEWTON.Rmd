@@ -1,0 +1,42 @@
+---
+title: "BINOMIO DE NEWTON"
+author: "VICTOR TERRON"
+date: "3/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# PRODUCTO NOTABLE
+Su formula es: $$(a+b)^2=a^2+2ab+b^2$$
+
+# FUNCION CON R QUE CALCULE EL PRODUCTO NOTABLE
+```{r prod_notable, echo=TRUE}
+binomioNewton2 = function(a,b){
+  (a^2)+(2*a*b)+(b^2)
+}
+binomioNewton2(2,2)
+```
+# BINOMIO DE NEWTON
+Su formula es: $$(a+b)^n=\sum_{k=0}^n {n\choose k} \cdot a^{n-k}\cdot b^k ={n\choose 0}*a^{n-0}*b^{k=0}+\cdots + {n \choose n}*a^{0}*b^{n}$$
+
+
+# SU FUNCIÓN EN R ES
+```{r binewt}
+binomioNewton=function(a,b,n){
+  cumsum(choose(n,(0:n))*a^{n-(0:n)}*b^(0:n))[n+1]
+}
+binomioNewton(5,4,3)
+
+```
+
+# SUB-VECTORES
+```{r subvectores}
+v=c(1:5)
+v[2]
+v[-c(3,5)]
+v[v!=1 & v>3]
+```
+

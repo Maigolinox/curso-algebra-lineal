@@ -1,0 +1,15 @@
+---
+title: "EJEMPLO DE SINTAXIS EN LATEX PARA ECUACIONES"
+author: "VICTOR TERRON"
+date: "29/12/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Ejemplos de sintaxis de ecuaciones con LaTeX:
+
+\$\$ \\left.\\begin{array}{l} Ax+By+C=0\\Zx+Dy+F=0\\end{array}\\right\}A\$\$
+$$\left.\begin{array}{l} Ax+By+C=0\\Zx+Dy+F=0\end{array}\right\}A$$
+\$\$|x|=\\left\{\\begin{array}{lr} -x & \\text {Si } x=0\\y & \\text {Si }y=0\\end{array}\\right.\$$
+$$|x|=\left\{\begin{array}{lr} -x & \text {Si } x=0\\y & \text {Si }y=0\end{array}\right.$$

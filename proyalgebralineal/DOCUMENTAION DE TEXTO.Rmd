@@ -1,0 +1,120 @@
+---
+title: "DOCUMENTACIONTEXTO"
+author: "VICTOR TERRON"
+date: "31/12/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Para documentar el texto tenemos varias formas de escribir títulos, los títulos inician con hashtag
+
+# TÍTULO 1
+Título más grande 1
+
+
+## TÍTULO 2
+
+Título 2
+
+### TÍTULO 3
+
+Título 3
+
+#### TÍTULO 4
+
+
+Título 4
+
+
+##### TÍTULO 5
+
+
+Título 5
+
+
+
+###### TITULO 6
+
+Título 6
+
+
+Éste es un texto llano podemos escribir el texto como querramos y combinar `R` con \LaTeX.
+Esto sería una nueva linea de texto, para que aparezca un intro debe colocarse dos enters, para que aparezca solo un saldo de línea es un enter.
+
+
+Fijate que para iniciar un nuevo parrafo se requiere de dos enter. 
+
+Para colocar cursivas se debe utilizar un asterisco por ejemplo: *esto sería un texto* o bien _usar barra baja_.
+
+Para colocar negrita podemos utilizar un doble asterisco  por ejemplo: **esto es negrita** o bien una doble barra baja __esto tambien es negrita__.
+
+Los superindices van con el **sombrerito**: este curso vale por mi nota^2^.
+Por ejemplo si queremos Juan Gabriel^profe^.
+
+Pra tachar una palbra usamos una doble tilde que para mi es un aproximado solo ~~Las matematicas son aburridas~~.
+
+Para colocar un hipervinculo por ejemplo a [GOOGLE](https://google.com) se usa la syntaxis.
+
+endashh: -- Y entonces TERRON dijo
+
+
+emdash: --- Como TERRON quería explicar
+
+elipsis: ...
+
+ecuaciones en linea $\pi  \cdot  r^2$
+
+
+<!-- imagen ![](../../curso-algebra-lineal/imagen.png) -->
+
+
+***
+
+
+Aquí comenzamos otra cosa
+
+
+>Cita en bloque
+
+
+### Listas no ordenadas
+
+* Item primero
+\subitem -Sub-item
+* Item segundo
+\subitem -Sub-Item
+
+### Listas ordenadas
+
+1. Item primero
+\subitem 1.1. Sub-item 1 de primero
+\subitem 1.2. Sub-item 2 de primero
+2. Item segundo
+\subitem 2.1. Sub-item 1 de segundo
+\subitem 2.2. ...
+3. Item tercero
+1. Cuarto item
+1. Quinto item
+1. Sexto item
+
+
+## Tablas
+
+Si la tabla se crea en R tenemos la siguiente sintaxis:
+
+Alumno          | Calificación
+----------------|--------------
+Victor Terron M | 10.0
+Victor Torres M | 9.0
+Manuel Parraguirre| 8.0
+
+
+
+## VECTORES EN `R`
+
+Para definir un vector en `R` utilizamos c(1,2,3), aunque tambien se puede utilizar scan() para escanear datos que se escriben desde teclado, suponiendo que tengamos ya un vector en la variable x y quieramos modificar visualmente el vector x rep(a,n) donde a es el elemento que queremos repetir y el numero de veces en n que queremos repetirlo
+
+
+
+
